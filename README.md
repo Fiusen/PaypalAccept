@@ -1,5 +1,5 @@
 # PaypalAccept
-Auto Accept pendent payments in paypal using TamperMonkey
+Auto Accept pendent payments in paypal using Tampermonkey
 
 
 This tampermonkey script will automatically accept all pendent payments in your paypal account under the activities tab.
