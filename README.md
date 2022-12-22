@@ -2,8 +2,9 @@
 Auto Accept pendent payments in paypal using TamperMonkey
 
 
-This tampermonkey script will automatically accept all pendent payments in your paypal account under the "www.paypal.com/myaccount/activities" url.
-This was made as paypal for some stupid reason made so you have to MANUALLY accept every payment you receive that is not from your default currency (whos idea was that?),
+This tampermonkey script will automatically accept all pendent payments in your paypal account under the activities tab.
+
+This was made as paypal made so you have to MANUALLY accept every payment you receive that is not from your default currency, 
 so it could take you hours to accept every payment you receive in a month.
 
 How to use:
