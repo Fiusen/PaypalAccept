@@ -6,6 +6,8 @@
 // @author       fiusen
 // @icon         https://www.google.com/s2/favicons?domain=paypal.com
 // @match        https://www.paypal.com/myaccount/activities/*
+// @grant    GM.getValue
+// @grant    GM.setValue
 // ==/UserScript==
 
 function getAncestors(node) {
