@@ -2,7 +2,7 @@
 // @name         Accept Payment
 // @namespace    http://tampermonkey.net/
 // @version      0.1
-// @description  Gets all pendent payments and accepts them
+// @description  Gets all pending payments and accepts them
 // @author       fiusen
 // @icon         https://www.google.com/s2/favicons?domain=paypal.com
 // @match        https://www.paypal.com/myaccount/activities/*
