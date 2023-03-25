@@ -10,8 +10,7 @@
 
 
 (async () => {
-    let d = document.getElementsByClassName("vx_btn")
-    d[0].click();
+    document.getElementsByClassName("vx_btn").click();
 })();
 
 
