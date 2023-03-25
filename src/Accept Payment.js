@@ -10,16 +10,6 @@
 // @grant    GM.setValue
 // ==/UserScript==
 
-function getAncestors(node) {
-    var ancestors = [];
-    while (node.parentNode) {
-        ancestors.push(node.parentNode.className);
-        node = node.parentNode;
-    }
-    return ancestors;
-}
-
-
 function getAcceptElements() {
     var aTags = document.getElementsByClassName("ppvx_row___2-7-9");
     var foundList = [];
@@ -46,10 +36,11 @@ function getDescendants(node) {
 }
 
 (async () => {
-    if (await GM.getValue("running")) close();
-    var index = 0;
+    if (await GM.getValue("running")) 
+        close();
+    
     GM.setValue("running", true);
-    var values = [];
+
     var ancestors = getDescendants(getAcceptElements()[0]);
     for(var j = 0; j < ancestors.length; j++) {
         let o = ancestors[j];
