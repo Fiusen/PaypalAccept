@@ -11,16 +11,7 @@
 // ==/UserScript==
 
 function getAcceptElements() {
-    var aTags = document.getElementsByClassName("ppvx_row___2-7-9");
-    var foundList = [];
-
-    for (var i = 0; i < aTags.length; i++) {
-        if (aTags[i].className == "ppvx_row___2-7-9") {
-            foundList.push(aTags[i]);
-        }
-    }
-
-    return foundList;
+    return document.getElementsByClassName("ppvx_row___2-7-9");
 }
 
 function getDescendants(node) {
@@ -41,7 +32,7 @@ function getDescendants(node) {
     
     GM.setValue("running", true);
 
-    var ancestors = getDescendants(getAcceptElements()[0]);
+    var ancestors = getDescendants(getAcceptElements()[0]); // hack to get those hidden accept url's from the button
     for(var j = 0; j < ancestors.length; j++) {
         let o = ancestors[j];
         if(typeof(o.className) === "string" && o.className.includes("list_item")) {
